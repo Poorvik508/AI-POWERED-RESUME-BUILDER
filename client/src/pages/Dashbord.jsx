@@ -205,7 +205,7 @@ const Dashbord = () => {
           <form
             onSubmit={editTitle}
             onClick={() => setEditResumeId('')}
-            clssName=" fixed inset-0 bg-black/70 backdrop-blur bg-opacity-50
+            className=" fixed inset-0 bg-black/70 backdrop-blur bg-opacity-50
         z-10 flex items-center justify-center"
             action=""
           >
