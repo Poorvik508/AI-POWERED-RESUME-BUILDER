@@ -105,13 +105,19 @@ const ResumeBuilder = () => {
               {/* Form content */}
               <div className="space-y-6">
                 {activeSection.id == 'presonal' && (
-                  <PersonalInfoForm data={resumeData.personal_info }  onChange={(data)=>setResumeData(prev=>({...prev,personal_info}))}/>
+                  <PersonalInfoForm data={resumeData.personal_info }  onChange={(data)=>setResumeData(prev=>({...prev,personal_info:data}))} removeBackground={removeBackground} setRemoveBackground={setRemoveBackground}/>
                         )}
               </div>
             </div>
           </div>
           {/* Right Panel-preview */}
-          <div></div>
+          <div className="lg:col-span-7 max-lg:mt-6">
+            <div>
+              {/* ---buttons----- */}
+              
+            </div>
+            {/* resume preview */}
+          </div>
         </div>
       </div>
     </div>
